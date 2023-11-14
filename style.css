@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: green;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flexbox-one {
+  width: 350px;
+}
+
+.flexbox-two {
+  width: 400px;
+}
+
+.flexbox-one {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  padding: 34px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: 50px 50px;
+}
+
+h1 {
+  color: hsl(241, 100%, 89%);
+}
+
+.circle {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 30px 0;
+}
+
+span {
+  font-size: 60px;
+  font-weight: 700;
+  color: hsl(221, 100%, 96%);
+}
+
+.circle p {
+  color: hsl(224, 30%, 27%);
+}
+
+h3 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  color: hsl(221, 100%, 96%);
+}
+
+.flexbox-one p {
+  width: 250px;
+  font-size: 18px;
+  line-height: 27px;
+  color: hsl(241, 100%, 89%); 
+}
+
+.flexbox-two {
+  background-color: white;
+  padding: 40px 25px 40px 65px;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 2px 5px 2px red;
+}
+
+.Reaction {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.Memory {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.Verbal {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.Visual {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.flexbox-two .icon {
+  display: flex;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+h4 {
+  margin-left: 9px;
+}
+
+strong {
+  color: black;
+  font-weight: 800;
+  margin-right: 9px;
+}
+
+.flexbox-two p {
+  color: hsl(241, 100%, 89%);
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 18px;
+  padding: 17px 120px;
+}
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+button:active {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .flexbox-one {
+    width: 390px;
+  }
+  .flexbox-two {
+    width: 370px;
+  }
+  .flexbox-one p {
+    width: 270px;
+    font-size: 16px;
+  }
+  .flexbox-two {
+    border-radius: 0 0 30px 30px;
+    padding: 40px 25px;
+  }
+  button {
+    padding: 17px 125px;
+  }
+  .attribution {
+    margin: 40px 0;
+  }
+}
